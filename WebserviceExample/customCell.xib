@@ -12,19 +12,27 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cec-hS-Wxx" id="tm6-Sp-hzW">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;postTitle&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdN-x6-vdA">
-                        <rect key="frame" x="12" y="8" width="616" height="32"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;postTitle&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdN-x6-vdA">
+                        <rect key="frame" x="12" y="4" width="616" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;posterID&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vqd-u1-25w">
-                        <rect key="frame" x="548" y="30" width="80" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;posterID&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vqd-u1-25w">
+                        <rect key="frame" x="542" y="21" width="86" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="highlightedColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vqd-u1-25w" secondAttribute="bottom" constant="4" id="9xb-2P-hvM"/>
+                    <constraint firstAttribute="trailing" secondItem="vqd-u1-25w" secondAttribute="trailing" constant="12" id="GBQ-fl-PD8"/>
+                    <constraint firstItem="IdN-x6-vdA" firstAttribute="top" secondItem="tm6-Sp-hzW" secondAttribute="top" constant="4" id="J5E-we-3Ko"/>
+                    <constraint firstAttribute="trailing" secondItem="IdN-x6-vdA" secondAttribute="trailing" constant="12" id="bbt-HC-X0I"/>
+                    <constraint firstItem="vqd-u1-25w" firstAttribute="top" secondItem="IdN-x6-vdA" secondAttribute="bottom" constant="1" id="fV4-tt-Gxj"/>
+                    <constraint firstItem="IdN-x6-vdA" firstAttribute="leading" secondItem="tm6-Sp-hzW" secondAttribute="leading" constant="12" id="oT7-8X-cfL"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="post" destination="IdN-x6-vdA" id="hx2-Ld-B0o"/>
