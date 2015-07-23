@@ -14,6 +14,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -23,7 +24,7 @@
     self.head.text=[@"Title: " stringByAppendingString:self.object.title];
     self.content.text=self.object.body;
     self.postid.text=[@"Post ID: " stringByAppendingString:[NSString stringWithFormat:@"%d",self.object.id]];
-                      
+    self.profilepic.image=[UIImage imageNamed:[[NSString stringWithFormat:@"%@",self.object.userId] stringByAppendingString:@".jpg"]];
     self.userid.text=[NSString stringWithFormat:@"User ID: %@",self.object.userId];
     
   

@@ -11,8 +11,11 @@
 #import "TestClassSuper.h"
 #import "JSONModelLib.h"
 #import "ViewController.h"
+#import "CustomCell.h"
 
 @interface TableViewControllerTest ()
+
+
 
 @end
 
@@ -45,43 +48,51 @@ id objectToPassed;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString* tableIdentifier = @"SimpleTableItem";
+    static NSString* tableIdentifier = @"customCell";
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:tableIdentifier];
+    CustomCell* cell = (CustomCell*)[tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
     if(cell==nil){
-        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableIdentifier];
+        NSArray* nib=[[NSBundle mainBundle] loadNibNamed:@"customCell" owner:self options:nil];
+        cell=[nib objectAtIndex:0];
         
     }
     //cell.textLabel.text= [NSString stringWithFormat:@"%d",[[tableData objectAtIndex:indexPath.row] id] ];
-    cell.textLabel.text=[[tableData objectAtIndexedSubscript:indexPath.row] title];
+    cell.post.text=[[tableData objectAtIndexedSubscript:indexPath.row] title];
+    cell.poster.text=[NSString stringWithFormat:@"User ID: %@",[[tableData objectAtIndexedSubscript:indexPath.row] userId]];
     return cell;
     
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60;
+}
 
 -(void)accessSource{
-    
+   CGRect screenBound = [[UIScreen mainScreen] bounds];
+    UIActivityIndicatorView * vi = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [vi setFrame:CGRectMake(screenBound.size.width/2.0-50,200, 100, 100)];
+    [self.view addSubview:vi];
+   [vi startAnimating];
     AFHTTPRequestOperationManager *testMng =[AFHTTPRequestOperationManager manager];
 
     [testMng GET:@"http://jsonplaceholder.typicode.com/posts"  parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         tableData = [TestClass arrayOfModelsFromDictionaries:responseObject];
+        [vi stopAnimating];
         [self.tableView reloadData];
        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [self.tableView reloadData];
     }];
     
 };
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-//    ViewController* destination= [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Content"];
-//    objectToPassed=[tableData objectAtIndexedSubscript:indexPath.row];
-//    destination.object=objectToPassed;
-    //[self.navigationController pushViewController:destination animated:true];
+   ViewController* destination= [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Content"];
+   objectToPassed=[tableData objectAtIndexedSubscript:indexPath.row];
+   destination.object=objectToPassed;
+    [self.navigationController pushViewController:destination animated:true];
    // [self performSegueWithIdentifier:@"detailSegue" sender:self];
 }
-//-(void)
 
 /*
 // Override to support conditional editing of the table view.
@@ -120,9 +131,9 @@ id objectToPassed;
 
 #pragma mark - Navigation
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSLog(@"ewdew");
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    NSLog(@"ewdew");
+//}
 //- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
 //    NSLog(@"aaa");
 //}

@@ -15,5 +15,6 @@
 @property (strong,nonatomic) TestClass* object;
 @property (strong,nonatomic) IBOutlet UILabel *postid;
 @property (strong,nonatomic) IBOutlet UILabel *userid;
+@property (strong,nonatomic) IBOutlet UIImageView* profilepic;
 
 @end
