@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062F1FB21B5E96A500402C04 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 062F1FB11B5E96A500402C04 /* TestClass.m */; };
+		064F78BC1B5FC1960065CF6A /* TableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 064F78BB1B5FC1960065CF6A /* TableViewControllerTest.m */; };
+		064F78C21B5FDB9A0065CF6A /* NavigationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 064F78C11B5FDB9A0065CF6A /* NavigationTest.m */; };
 		067C012B1B5E607A007F5267 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C012A1B5E607A007F5267 /* main.m */; };
 		067C012E1B5E607A007F5267 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C012D1B5E607A007F5267 /* AppDelegate.m */; };
 		067C01311B5E607A007F5267 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C01301B5E607A007F5267 /* ViewController.m */; };
@@ -14,6 +17,8 @@
 		067C01361B5E607A007F5267 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067C01351B5E607A007F5267 /* Images.xcassets */; };
 		067C01391B5E607A007F5267 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067C01371B5E607A007F5267 /* LaunchScreen.xib */; };
 		067C01451B5E607A007F5267 /* WebserviceExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C01441B5E607A007F5267 /* WebserviceExampleTests.m */; };
+		0682D5121B5F763B0052C251 /* TestClassSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0682D5111B5F763B0052C251 /* TestClassSuper.m */; };
+		ABCDAD83595AF5E865D7F7AC /* libPods-WebserviceExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7696840E3515E3CE65901209 /* libPods-WebserviceExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062F1FB01B5E96A500402C04 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		062F1FB11B5E96A500402C04 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		064F78BA1B5FC1960065CF6A /* TableViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerTest.h; sourceTree = "<group>"; };
+		064F78BB1B5FC1960065CF6A /* TableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerTest.m; sourceTree = "<group>"; };
+		064F78C01B5FDB9A0065CF6A /* NavigationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTest.h; sourceTree = "<group>"; };
+		064F78C11B5FDB9A0065CF6A /* NavigationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTest.m; sourceTree = "<group>"; };
 		067C01251B5E607A007F5267 /* WebserviceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebserviceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067C01291B5E607A007F5267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067C012A1B5E607A007F5267 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +51,11 @@
 		067C013E1B5E607A007F5267 /* WebserviceExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebserviceExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067C01431B5E607A007F5267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067C01441B5E607A007F5267 /* WebserviceExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebserviceExampleTests.m; sourceTree = "<group>"; };
+		0682D5101B5F763B0052C251 /* TestClassSuper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassSuper.h; sourceTree = "<group>"; };
+		0682D5111B5F763B0052C251 /* TestClassSuper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassSuper.m; sourceTree = "<group>"; };
+		7696840E3515E3CE65901209 /* libPods-WebserviceExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebserviceExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F2E0BBDAFFE925C9107A3B /* Pods-WebserviceExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebserviceExample/Pods-WebserviceExample.debug.xcconfig"; sourceTree = "<group>"; };
+		AAAD8DF423A97755C76D9403 /* Pods-WebserviceExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebserviceExample/Pods-WebserviceExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCDAD83595AF5E865D7F7AC /* libPods-WebserviceExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +83,8 @@
 				067C01271B5E607A007F5267 /* WebserviceExample */,
 				067C01411B5E607A007F5267 /* WebserviceExampleTests */,
 				067C01261B5E607A007F5267 /* Products */,
+				11C68801BA5F9E23C07CB2C1 /* Pods */,
+				49E6D6308322137348650642 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +102,16 @@
 			children = (
 				067C012C1B5E607A007F5267 /* AppDelegate.h */,
 				067C012D1B5E607A007F5267 /* AppDelegate.m */,
+				062F1FB01B5E96A500402C04 /* TestClass.h */,
+				0682D5101B5F763B0052C251 /* TestClassSuper.h */,
+				0682D5111B5F763B0052C251 /* TestClassSuper.m */,
+				064F78C01B5FDB9A0065CF6A /* NavigationTest.h */,
+				064F78C11B5FDB9A0065CF6A /* NavigationTest.m */,
+				062F1FB11B5E96A500402C04 /* TestClass.m */,
 				067C012F1B5E607A007F5267 /* ViewController.h */,
 				067C01301B5E607A007F5267 /* ViewController.m */,
+				064F78BA1B5FC1960065CF6A /* TableViewControllerTest.h */,
+				064F78BB1B5FC1960065CF6A /* TableViewControllerTest.m */,
 				067C01321B5E607A007F5267 /* Main.storyboard */,
 				067C01351B5E607A007F5267 /* Images.xcassets */,
 				067C01371B5E607A007F5267 /* LaunchScreen.xib */,
@@ -119,6 +146,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		11C68801BA5F9E23C07CB2C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2E0BBDAFFE925C9107A3B /* Pods-WebserviceExample.debug.xcconfig */,
+				AAAD8DF423A97755C76D9403 /* Pods-WebserviceExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49E6D6308322137348650642 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7696840E3515E3CE65901209 /* libPods-WebserviceExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 067C01481B5E607A007F5267 /* Build configuration list for PBXNativeTarget "WebserviceExample" */;
 			buildPhases = (
+				02A01E170AD21D47B2398F73 /* Check Pods Manifest.lock */,
 				067C01211B5E607A007F5267 /* Sources */,
 				067C01221B5E607A007F5267 /* Frameworks */,
 				067C01231B5E607A007F5267 /* Resources */,
+				E43CD50B82BA1A44FCB749A3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +260,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02A01E170AD21D47B2398F73 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E43CD50B82BA1A44FCB749A3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebserviceExample/Pods-WebserviceExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		067C01211B5E607A007F5267 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064F78C21B5FDB9A0065CF6A /* NavigationTest.m in Sources */,
+				062F1FB21B5E96A500402C04 /* TestClass.m in Sources */,
 				067C01311B5E607A007F5267 /* ViewController.m in Sources */,
 				067C012E1B5E607A007F5267 /* AppDelegate.m in Sources */,
+				064F78BC1B5FC1960065CF6A /* TableViewControllerTest.m in Sources */,
 				067C012B1B5E607A007F5267 /* main.m in Sources */,
+				0682D5121B5F763B0052C251 /* TestClassSuper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +426,7 @@
 		};
 		067C01491B5E607A007F5267 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F2E0BBDAFFE925C9107A3B /* Pods-WebserviceExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebserviceExample/Info.plist;
@@ -353,6 +437,7 @@
 		};
 		067C014A1B5E607A007F5267 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAAD8DF423A97755C76D9403 /* Pods-WebserviceExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebserviceExample/Info.plist;
@@ -414,6 +499,7 @@
 				067C014A1B5E607A007F5267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		067C014B1B5E607A007F5267 /* Build configuration list for PBXNativeTarget "WebserviceExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +508,7 @@
 				067C014D1B5E607A007F5267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

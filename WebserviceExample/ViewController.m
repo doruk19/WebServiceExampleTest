@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking.h>
+#import "TestClassSuper.h"
+#import "JSONModelLib.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.head.text=[@"Title: " stringByAppendingString:self.object.title];
+    self.content.text=self.object.body;
+    self.postid.text=[@"Post ID: " stringByAppendingString:[NSString stringWithFormat:@"%d",self.object.id]];
+                      
+    self.userid.text=[NSString stringWithFormat:@"User ID: %@",self.object.userId];
+    
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+ 
 @end

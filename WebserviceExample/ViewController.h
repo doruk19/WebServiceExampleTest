@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TestClass.h"
 @interface ViewController : UIViewController
 
+@property (strong,nonatomic) IBOutlet UILabel *head;
+@property (strong,nonatomic) IBOutlet UILabel *content;
+@property (strong,nonatomic) TestClass* object;
+@property (strong,nonatomic) IBOutlet UILabel *postid;
+@property (strong,nonatomic) IBOutlet UILabel *userid;
 
 @end
-
